@@ -2,25 +2,6 @@
 Benjamin Schmid <benjamin.schmid@exxcellent.de>
 2018-01-01
 
-// Verwendung
-//   1. Andere Beispiele anssehen
-//   2. der Struktur folgenden ausfüllen
-//   3. PDF erzeugen & kommunizieren: `asciidoctor-pdf REVIEW.adoc`
-
-NOTE:: link:https://www.exxcellent.de/confluence/display/XXINT/Hinweise+zur+Bewertung+der+eXXcellent+Programming+Challenge[
-     Im Confluence findet man] Hinweise zu den Bewertungspunkten/Kriterien die sich unten in der Struktur wiederfinden
-
-
-.Verwendete Wertungssymbole
-[cols="1,10"]
-|===
-|`++`| sehr gut; übertrifft Forderung
-|`+` | gut
-|`o` | neutral – erfüllt Erwartungen
-|`-` | nicht gut – erfüllt die Erwartugnen nicht
-|`--`| sehr schlecht – grobe Mängel.
-|===
-
 == Management Summary und Fazit
 
 .Kontext des Kandidatens
@@ -32,17 +13,41 @@ TODO:: Bewerten
 // zusammenfassende Einschätzung & Bewertung
 
 <<<<
+== Hinweise
+
+// Verwendung
+//   1. Andere Beispiele anssehen
+//   2. der Struktur folgenden ausfüllen
+//   3. PDF erzeugen & kommunizieren: `asciidoctor-pdf REVIEW.adoc`
+
+link:https://www.exxcellent.de/confluence/display/XXINT/Hinweise+zur+Bewertung+der+eXXcellent+Programming+Challenge[
+     Im Confluence findet man] Hinweise zu den Bewertungspunkten/Kriterien die sich unten in der Struktur wiederfinden
+
+
+.Verwendete Wertungssymbole
+:sgut: icon:thumbs-up[]
+:gut: icon:check-circle[]
+:ok: icon:circle[]
+:bad: icon:bolt[]
+:vbad: icon:exclamation-triangle[]
+
+[cols="1,10"]
+|===
+|{sgut}| sehr gut; übertrifft Forderung
+|{gut} | gut
+|{ok} | neutral – erfüllt Erwartungen
+|{bad} | nicht gut – erfüllt die Erwartungen nicht
+|{vbad}| sehr schlecht – grobe Mängel.
+|===
+
 == Review
 
 === Vorgehensweise
 
-* ++: …
-* +: …
-* o: …
-* -: …
-* --: …
-
 ==== Vorgehensweise: Bearbeitung der Aufgabe
+
+* {gut}: …
+
 
 ==== Vorgehensweise: Refactoring
 
@@ -54,18 +59,18 @@ TODO:: Bewerten
 
 ==== Tooling: Build & IDE
 
-* o: …
+* {ok}: …
 
 
 === Architektur
 
 ==== Software-Entwurf: Datenmodell
 
-* -: …
+* {bad}: …
 
 ==== Software-Entwurf: Einlesen der Dateien
 
-* ++: …
+* {sgut}: …
 
 
 ==== Software-Entwurf: Algorithmus, Berechnung & Korrektheit des Ergebnis
