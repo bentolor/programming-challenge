@@ -1,6 +1,6 @@
 = Review Programming-Challenge des Kandidaten XXXX
 Benjamin Schmid <benjamin.schmid@exxcellent.de>
-2018-01-01
+2020-01-01
 
 == Management Summary und Fazit
 
@@ -23,11 +23,11 @@ TODO
 link:https://www.exxcellent.de/confluence/display/XXINT/Hinweise+zur+Bewertung+der+eXXcellent+Programming+Challenge[
      Im Confluence findet man] Hinweise zu den Bewertungspunkten/Kriterien die sich unten in der Struktur wiederfinden
 
-
 .Verwendete Wertungssymbole
+:icons: font
 :sgut: icon:thumbs-up[]
 :gut: icon:check-circle[]
-:ok: icon:circle[]
+:ok: icon:ellipsis-h[]
 :bad: icon:bolt[]
 :vbad: icon:exclamation-triangle[]
 
@@ -40,68 +40,76 @@ link:https://www.exxcellent.de/confluence/display/XXINT/Hinweise+zur+Bewertung+d
 |{vbad}| sehr schlecht – grobe Mängel.
 |===
 
+
+
+
 == Review
+
+
 
 === Vorgehensweise
 
 ==== Vorgehensweise: Bearbeitung der Aufgabe
 
-* {gut}: …
+_Geschätzte Bearbeitungszeit:_ 
+
+{gut}: …
 
 
 ==== Vorgehensweise: Refactoring
 
-=== Tooling
+
+
+
+=== Tooling 
 
 ==== Tooling:  Versionsverwaltung & Versionierung
-
-// Wie
+// Fortsetuzung der Historie, kleinteilige Commits, …
 
 ==== Tooling: Build & IDE
+{ok}: …
 
-* {ok}: …
+{vbad}: …
+
 
 
 === Architektur
 
 ==== Software-Entwurf: Datenmodell
+{bad}: …
 
-* {bad}: …
+{ok}: …
+
 
 ==== Software-Entwurf: Einlesen der Dateien
-
-* {sgut}: …
+{sgut}: …
 
 
 ==== Software-Entwurf: Algorithmus, Berechnung & Korrektheit des Ergebnis
+{gut}: …
 
-* o/-:…
-* +: …
 
 ==== Software-Entwurf: Problemzergliederung, Erweiterbarkeit
+{ok}: …
 
-* -: …
+
+
 
 
 === Design & Codestyle
 
-
 ==== Code: Programmiersprache & Idiome
 // Beherrscht er Sprachmittel, typische Idiome
-
-* o/-: …
+{ok}: …
 
 
 ==== Design: Entwurfspattern
 // setzt er Patterns ein. Sind diese sinnvoll eingesetzt
-
-* o: …
+{ok}: …
 
 ==== Code: Namen & Begrifflichkeiten
 // Sinnvolle und Klare Namen dort wo es wichtrig ist
-
-* o: …
-
+{ok}: …
 
 ==== Code: Dokumentation
 // Priorität der Dokumentation:
@@ -111,26 +119,28 @@ link:https://www.exxcellent.de/confluence/display/XXINT/Hinweise+zur+Bewertung+d
 //    4. Doku von Methoden & Parametern
 //
 // Inhalt der Dokumentation: Umschreibt er nur nochmals den Code (schlecht) oder Konzept & Ideen (gut)
+{ok}: …
+
+
+
+
 
 
 === Qualität
 
 ==== Qualität: Robustheit, Resilency & Fehlerbehandlung
+{ok}: …
 
-* …
 
 ==== Qualität: Test-Driven Development
-
-* o/-: …
+{ok}: …
 
 
 ==== Qualität: Sorgfalt
-
-* o: …
+{ok}: …
 
 
 ==== Qualität: Ergebnisse der IDEA Codeanalyse
-
 // Wie ausführen:
 //    1. Projekt in IDEA öffnen
 //    2. Inspection Profile installieren.
@@ -192,12 +202,10 @@ Inspection tree:
 ----
 
 
-
 <<<
 == Diskussionthemen/Anregungen für Einstellungsgespräch
 
-NOTE:: Dinge die man mit dem Kandidaten z.B. im persönlichen Bewerbungsgespräch als
-       Aufhänger durchsprechen könnte.
+NOTE:: Dinge die man mit dem Kandidaten z.B. im persönlichen Bewerbungsgespräch als Aufhänger durchsprechen könnte.
 
 
 
