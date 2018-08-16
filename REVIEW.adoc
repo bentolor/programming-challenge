@@ -1,10 +1,17 @@
-= Review Programming-Challenge Lösung für Kandidate XXXX
+= Review Programming-Challenge des Kandidaten XXXX
 Benjamin Schmid <benjamin.schmid@exxcellent.de>
-2018-06-27
+2018-01-01
 
-Kontext: TODO:, z.B. Einsteiger mit Abschluss in Computer Science. Sprachlevel: ~B1.
+// Verwendung
+//   1. Andere Beispiele anssehen
+//   2. der Struktur folgenden ausfüllen
+//   3. PDF erzeugen & kommunizieren: `asciidoctor-pdf REVIEW.adoc`
 
-.Verwendete Wertungssymbole 
+NOTE:: link:https://www.exxcellent.de/confluence/display/XXINT/Hinweise+zur+Bewertung+der+eXXcellent+Programming+Challenge[
+     Im Confluence findet man] Hinweise zu den Bewertungspunkten/Kriterien die sich unten in der Struktur wiederfinden
+
+
+.Verwendete Wertungssymbole
 [cols="1,10"]
 |===
 |`++`| sehr gut; übertrifft Forderung
@@ -16,123 +23,176 @@ Kontext: TODO:, z.B. Einsteiger mit Abschluss in Computer Science. Sprachlevel: 
 
 == Management Summary und Fazit
 
+.Kontext des Kandidatens
+TODO
+//  z.B. Einsteiger mit Abschluss in Computer Science. Sprachlevel: ~B1.
+
+.Bewertung & Einschätzung
+TODO:: Bewerten
+// zusammenfassende Einschätzung & Bewertung
 
 <<<<
-== Review im Detail
+== Review
 
 === Vorgehensweise
 
-* o/+: …
-
-
-=== Tooling: Versionierung
-
+* ++: …
+* +: …
+* o: …
 * -: …
+* --: …
 
-=== Tooling: Build & IDE
+==== Vorgehensweise: Bearbeitung der Aufgabe
+
+==== Vorgehensweise: Refactoring
+
+=== Tooling
+
+==== Tooling:  Versionsverwaltung & Versionierung
+
+// Wie
+
+==== Tooling: Build & IDE
 
 * o: …
 
-=== Idiome
 
-* o/-: …
+=== Architektur
 
-=== Software-Entwurf: Problemzergliederung, Erweiterbarkeit
-
-* -: …
-
-=== Software-Entwurf: Datenmodell
+==== Software-Entwurf: Datenmodell
 
 * -: …
 
-=== Software-Entwurf: Einlesen der Dateien
+==== Software-Entwurf: Einlesen der Dateien
 
 * ++: …
 
 
-=== Software-Entwurf: Algorithmus, Berechnung & Korrektheit des Ergebnis
+==== Software-Entwurf: Algorithmus, Berechnung & Korrektheit des Ergebnis
 
 * o/-:…
-* +: Das Ergebnis ist korrekt
+* +: …
 
-=== Namen, Begrifflichkeiten & Dokumentation
+==== Software-Entwurf: Problemzergliederung, Erweiterbarkeit
 
-* o: …
+* -: …
 
-== Refactoring
 
-* o/+: …
+=== Design & Codestyle
 
-=== Robustheit, Resilency & Fehlerbehandlung
 
-* …
-
-=== Test-Driven Development
+==== Code: Programmiersprache & Idiome
+// Beherrscht er Sprachmittel, typische Idiome
 
 * o/-: …
 
 
-=== Sorgfalt
+==== Design: Entwurfspattern
+// setzt er Patterns ein. Sind diese sinnvoll eingesetzt
 
-* --: Generell stark mangelnde Sorgfalt und/oder Verständnis der Grundlagen. Vorgehen scheint eher Copy- & Paste-getrieben.
+* o: …
 
-=== Diskussionthemen/Anregungen für Einstellungsgespräch
+==== Code: Namen & Begrifflichkeiten
+// Sinnvolle und Klare Namen dort wo es wichtrig ist
 
-// Dinge die man mit dem Kandidaten z.B. im persönlichen Bewerbungsgespräch als 
-// Aufhänger durchsprechen könnte. 
+* o: …
 
-=== Ergebnisse der IDEA Codeanalyse mit `exxcellent2017.xml`
-// Analyse starten, Export als HTML, im Browser Copy&Paste
 
-…
+==== Code: Dokumentation
+// Priorität der Dokumentation:
+//    1. Doku der Konzepte & Pakete
+//    2. Doku der Schnittstellen
+//    3. Doku der Klassen & ihre Aufgaben.
+//    4. Doku von Methoden & Parametern
+//
+// Inhalt der Dokumentation: Umschreibt er nur nochmals den Code (schlecht) oder Konzept & Ideen (gut)
 
+
+=== Qualität
+
+==== Qualität: Robustheit, Resilency & Fehlerbehandlung
+
+* …
+
+==== Qualität: Test-Driven Development
+
+* o/-: …
+
+
+==== Qualität: Sorgfalt
+
+* o: …
+
+
+==== Qualität: Ergebnisse der IDEA Codeanalyse
+
+// Wie ausführen:
+//    1. Projekt in IDEA öffnen
+//    2. Inspection Profile installieren.
+//       Quelle: https://gitlab.exxcellent.de/exxcellent-technology/exxcellent-qa/blob/master/java/intellij-idea/.idea/inspectionProfiles/exxcellent-2018.xml
+//    3. Analyse starten
+//    4. Export als HTML, dann im Browser öffnen und betreffende bereiche Copy&Paste
+
+.Bewertung des Analysergebnises
+TODO:: Zwingend notwendig, da die Inspections teils Geschmackssache/Leitfaden teils kritische Probleme sein können.
+
+.Ergebnis der Ausführung (Error & Warnings)
 ----
 Inspection tree:
-    Error   34 errors 
-        General group   4 errors 
-            Line is longer than allowed by code style inspection   4 errors 
-                file .classpath   1 error 
-                    ERROR Line is longer than allowed by code style (> 140 columns) 
-                file description   2 errors 
-                    ERROR Line is longer than allowed by code style (> 140 columns) 
-                    ERROR Line is longer than allowed by code style (> 140 columns) 
-                file Ratschlag   1 error 
-                    ERROR Line is longer than allowed by code style (> 140 columns) 
-        Java group   30 errors 
-            Code maturity group   7 errors 
-                Call to 'printStackTrace()' inspection   7 errors 
-            Javadoc group   3 errors 
-                Missing 'package‑info.java' inspection   3 errors 
-            Method metrics group   2 errors 
-                Overly complex method inspection   2 errors 
-            Naming conventions group   18 errors 
-                Local variable naming convention inspection   17 errors 
-                Package naming convention inspection   1 error 
-    Warning   46 warnings 
-        General group   14 warnings 
-            Problematic whitespace inspection   10 warnings 
-            TODO comment inspection   4 warnings 
-        Ignore group   1 warning 
-        Java group   18 warnings 
-            Class structure group   3 warnings 
-                Field can be local inspection   3 warnings 
-            Code style issues group   1 warning 
-                Unnecessary interface modifier inspection   1 warning 
-            Declaration redundancy group   3 warnings 
-                Redundant throws clause inspection   1 warning 
-                Unused declaration inspection   2 warnings 
-            Imports group   1 warning 
-                Unused import inspection   1 warning 
-            Java language level migration aids group   2 warnings 
-                Java 7 group   2 warnings 
-            Performance group   2 warnings 
-                Redundant call to 'String.format()' inspection   2 warnings 
-            Probable bugs group   2 warnings 
-                Unused assignment inspection   2 warnings 
-            Resource management group   4 warnings 
-                AutoCloseable used without 'try'‑with‑resources inspection   2 warnings 
-                I/O resource opened but not safely closed inspection   2 warnings 
-        Properties Files group   13 warnings 
+    Error   34 errors
+        General group   4 errors
+            Line is longer than allowed by code style inspection   4 errors
+                file .classpath   1 error
+                    ERROR Line is longer than allowed by code style (> 140 columns)
+                file description   2 errors
+                    ERROR Line is longer than allowed by code style (> 140 columns)
+                    ERROR Line is longer than allowed by code style (> 140 columns)
+                file Ratschlag   1 error
+                    ERROR Line is longer than allowed by code style (> 140 columns)
+        Java group   30 errors
+            Code maturity group   7 errors
+                Call to 'printStackTrace()' inspection   7 errors
+            Javadoc group   3 errors
+                Missing 'package‑info.java' inspection   3 errors
+            Method metrics group   2 errors
+                Overly complex method inspection   2 errors
+            Naming conventions group   18 errors
+                Local variable naming convention inspection   17 errors
+                Package naming convention inspection   1 error
+    Warning   46 warnings
+        General group   14 warnings
+            Problematic whitespace inspection   10 warnings
+            TODO comment inspection   4 warnings
+        Ignore group   1 warning
+        Java group   18 warnings
+            Class structure group   3 warnings
+                Field can be local inspection   3 warnings
+            Code style issues group   1 warning
+                Unnecessary interface modifier inspection   1 warning
+            Declaration redundancy group   3 warnings
+                Redundant throws clause inspection   1 warning
+                Unused declaration inspection   2 warnings
+            Imports group   1 warning
+                Unused import inspection   1 warning
+            Java language level migration aids group   2 warnings
+                Java 7 group   2 warnings
+            Performance group   2 warnings
+                Redundant call to 'String.format()' inspection   2 warnings
+            Probable bugs group   2 warnings
+                Unused assignment inspection   2 warnings
+            Resource management group   4 warnings
+                AutoCloseable used without 'try'‑with‑resources inspection   2 warnings
+                I/O resource opened but not safely closed inspection   2 warnings
+        Properties Files group   13 warnings
 ----
+
+
+
+<<<
+== Diskussionthemen/Anregungen für Einstellungsgespräch
+
+NOTE:: Dinge die man mit dem Kandidaten z.B. im persönlichen Bewerbungsgespräch als
+       Aufhänger durchsprechen könnte.
+
 
 
