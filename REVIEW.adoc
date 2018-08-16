@@ -4,13 +4,13 @@ Benjamin Schmid <benjamin.schmid@exxcellent.de>
 
 == Management Summary und Fazit
 
-.Kontext des Kandidatens
-TODO
+=== Kontext des Kandidatens
 //  z.B. Einsteiger mit Abschluss in Computer Science. Sprachlevel: ~B1.
+TODO
 
-.Bewertung & Einschätzung
-TODO:: Bewerten
+=== Bewertung & Einschätzung
 // zusammenfassende Einschätzung & Bewertung
+TODO
 
 <<<<
 == Hinweise
