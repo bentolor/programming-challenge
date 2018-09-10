@@ -1,6 +1,7 @@
-= Review Programming-Challenge des Kandidaten XXXX
+= Review Programming-Challenge des Kandidaten Tsvetomir T.
 Benjamin Schmid <benjamin.schmid@exxcellent.de>
 2020-01-01
+:icons: font
 
 == Management Summary und Fazit
 
@@ -9,8 +10,30 @@ Benjamin Schmid <benjamin.schmid@exxcellent.de>
 TODO
 
 === Bewertung & Einschätzung
-// zusammenfassende Einschätzung & Bewertung
-TODO
+
+
+=== Bewertungskarte
+:x: icon:check-circle[]
+:0: icon:circle[]
+[cols=">2,1"]
+|===
+//| **Einschätzung: Qualitäten als Entwickler**   | {x}{x}{x}{x}{0}
+//| **Einschätzung: Qualitäten als Architekt**    | {x}{x}{0}{0}{0}
+//2+|
+| Architektur (Zergliederung, Flexibilität)     | {x}{x}{x}{x}{0}
+| Design (Patterns, Code Qualität)              | {x}{x}{0}{0}{0}
+| Umsetzung: Datenmodell                        | {x}{0}{0}{0}{0}
+| Umsetzung: Analyse & Algorithmus              | {x}{x}{0}{0}{0}
+| Umsetzung: Einlesen der Daten                 | {x}{x}{x}{0}{0}
+| Lesbarkeit, Klarheit des Entwurfs, Namen      | {x}{x}{0}{0}{0}
+| (Moderne) Java Idiome                         | {x}{x}{0}{0}{0}
+| Tooling (VCS, Maven, IDE)                     | {x}{x}{0}{0}{0}
+| Sorgfalt & Qualität der Ausarbeitung          | {x}{x}{0}{0}{0}
+| Tests (Umfang & Strategie)                    | {x}{0}{0}{0}{0}
+| Robustheit, Fehlerbehandlung, Diagnostik      | {0}{0}{0}{0}{0}
+|===
+
+
 
 <<<<
 == Hinweise
@@ -24,12 +47,12 @@ link:https://www.exxcellent.de/confluence/display/XXINT/Hinweise+zur+Bewertung+d
      Im Confluence findet man] Hinweise zu den Bewertungspunkten/Kriterien die sich unten in der Struktur wiederfinden
 
 .Verwendete Wertungssymbole
-:icons: font
 :sgut: icon:thumbs-up[]
 :gut: icon:check-circle[]
 :ok: icon:ellipsis-h[]
 :bad: icon:bolt[]
 :vbad: icon:exclamation-triangle[]
+
 
 [cols="1,10"]
 |===
@@ -51,7 +74,7 @@ link:https://www.exxcellent.de/confluence/display/XXINT/Hinweise+zur+Bewertung+d
 
 ==== Vorgehensweise: Bearbeitung der Aufgabe
 
-_Geschätzte Bearbeitungszeit:_ 
+_Geschätzte Bearbeitungszeit:_
 
 {gut}: …
 
@@ -61,7 +84,7 @@ _Geschätzte Bearbeitungszeit:_
 
 
 
-=== Tooling 
+=== Tooling
 
 ==== Tooling:  Versionsverwaltung & Versionierung
 // Fortsetuzung der Historie, kleinteilige Commits, …
@@ -149,56 +172,52 @@ _Geschätzte Bearbeitungszeit:_
 //    4. Export als HTML, dann im Browser öffnen und betreffende bereiche Copy&Paste
 
 .Bewertung des Analysergebnises
-TODO:: Zwingend notwendig, da die Inspections teils Geschmackssache/Leitfaden teils kritische Probleme sein können.
+{vbad}: Die statische Code-Analyse zeigt in ungewöhnlich klarer Form diverse auch im manuellen Review ins Auge stechenden Probleme auf.
+
+* kein Einsatz von Java 7+ Mitteln
+* Handwerkliche Mängel (inkonsistente CRLF)
+* Sorgfalts-Themen wie toter Code, unnötige Konstrukte, etc.
+* hoch-problematische, fehlende Fehlerbehandlung
 
 .Ergebnis der Ausführung (Error & Warnings)
 ----
 Inspection tree:
-    Error   34 errors
-        General group   4 errors
-            Line is longer than allowed by code style inspection   4 errors
-                file .classpath   1 error
-                    ERROR Line is longer than allowed by code style (> 140 columns)
-                file description   2 errors
-                    ERROR Line is longer than allowed by code style (> 140 columns)
-                    ERROR Line is longer than allowed by code style (> 140 columns)
-                file Ratschlag   1 error
-                    ERROR Line is longer than allowed by code style (> 140 columns)
-        Java group   30 errors
-            Code maturity group   7 errors
-                Call to 'printStackTrace()' inspection   7 errors
-            Javadoc group   3 errors
-                Missing 'package‑info.java' inspection   3 errors
-            Method metrics group   2 errors
-                Overly complex method inspection   2 errors
-            Naming conventions group   18 errors
-                Local variable naming convention inspection   17 errors
-                Package naming convention inspection   1 error
-    Warning   46 warnings
-        General group   14 warnings
-            Problematic whitespace inspection   10 warnings
-            TODO comment inspection   4 warnings
-        Ignore group   1 warning
-        Java group   18 warnings
-            Class structure group   3 warnings
-                Field can be local inspection   3 warnings
-            Code style issues group   1 warning
-                Unnecessary interface modifier inspection   1 warning
-            Declaration redundancy group   3 warnings
-                Redundant throws clause inspection   1 warning
-                Unused declaration inspection   2 warnings
-            Imports group   1 warning
-                Unused import inspection   1 warning
-            Java language level migration aids group   2 warnings
-                Java 7 group   2 warnings
-            Performance group   2 warnings
-                Redundant call to 'String.format()' inspection   2 warnings
-            Probable bugs group   2 warnings
-                Unused assignment inspection   2 warnings
-            Resource management group   4 warnings
-                AutoCloseable used without 'try'‑with‑resources inspection   2 warnings
-                I/O resource opened but not safely closed inspection   2 warnings
-        Properties Files group   13 warnings
+Error   24 errors
+
+    General group   15 errors
+        Inconsistent line separators inspection   8 errors
+        Line is longer than allowed by code style inspection   7 errors
+    Java group   9 errors
+        Class structure group   4 errors
+            Utility class is not 'final' inspection   2 errors
+            Utility class without 'private' constructor inspection   2 errors
+        Javadoc group   4 errors
+            Missing 'package‑info.java' inspection   4 errors
+        Naming conventions group   1 error
+            Local variable naming convention inspection   1 error
+
+Warning   50 warnings
+
+    General group   7 warnings
+        Problematic whitespace inspection   7 warnings
+    Java group   43 warnings
+        Declaration redundancy group   1 warning
+            Redundant throws clause inspection   1 warning
+        Encapsulation group   2 warnings
+            Assignment or return of field with mutable type inspection   2 warnings
+        Error handling group   2 warnings
+            Catch block may ignore exception inspection   2 warnings
+        Imports group   12 warnings
+            Unused import inspection   12 warnings
+        Java language level migration aids group   18 warnings
+            Java 7 group   18 warnings
+                Explicit type can be replaced with <> inspection   17 warnings
+                Identical 'catch' branches in 'try' statement inspection   1 warning
+        Probable bugs group   6 warnings
+            Unused assignment inspection   6 warnings
+        Resource management group   2 warnings
+            AutoCloseable used without 'try'‑with‑resources inspection   1 warning
+            I/O resource opened but not safely closed inspection   1 warning
 ----
 
 
@@ -206,6 +225,3 @@ Inspection tree:
 == Diskussionthemen/Anregungen für Einstellungsgespräch
 
 NOTE:: Dinge die man mit dem Kandidaten z.B. im persönlichen Bewerbungsgespräch als Aufhänger durchsprechen könnte.
-
-
-
