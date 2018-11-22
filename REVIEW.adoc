@@ -1,20 +1,33 @@
-= Review Programming-Challenge des Kandidaten Tsvetomir T.
+= Review Recuriting Programming Challenge
+// Reviewer
 Benjamin Schmid <benjamin.schmid@exxcellent.de>
+
+// Review-Datum
 2020-01-01
+
+// Grafische Symbole wie [x] und [/]
 :icons: font
+:x: icon:check-circle[]
+:0: icon:circle[]
 
 == Management Summary und Fazit
 
-=== Kontext des Kandidatens
+=== Eckdaten 
+[cols=">2,1"]
+|===
 //  z.B. Einsteiger mit Abschluss in Computer Science. Sprachlevel: ~B1.
-TODO
+| Kandidat (Kontext)    | Muttersprachler, hervorragende Papierlage
+| Kandidat (Seniorität) | {x} Einsteiger direkt/quer       +
+                          {0} Berufserfahren (1-3 Jahre)   +
+                          {0} Senior (3-7 Jahre)
+|===
+
 
 === Bewertung & Einschätzung
-
+TODO: Lorem ipsum
 
 === Bewertungskarte
-:x: icon:check-circle[]
-:0: icon:circle[]
+
 [cols=">2,1"]
 |===
 //| **Einschätzung: Qualitäten als Entwickler**   | {x}{x}{x}{x}{0}
@@ -66,7 +79,7 @@ link:https://www.exxcellent.de/confluence/display/XXINT/Hinweise+zur+Bewertung+d
 
 
 
-== Review
+== Details Review
 
 
 
