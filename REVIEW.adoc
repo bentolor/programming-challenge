@@ -12,8 +12,8 @@ Benjamin Schmid <benjamin.schmid@exxcellent.de>
 
 == Management Summary und Fazit
 
-=== Eckdaten 
-[cols=">2,1"]
+=== Eckdaten
+[cols="v,"]
 |===
 //  z.B. Einsteiger mit Abschluss in Computer Science. Sprachlevel: ~B1.
 | Kandidat (Kontext)    | Muttersprachler, hervorragende Papierlage
@@ -28,7 +28,8 @@ TODO: Lorem ipsum
 
 === Bewertungskarte
 
-[cols=">2,1"]
+
+[cols="v,^"]
 |===
 //| **Einschätzung: Qualitäten als Entwickler**   | {x}{x}{x}{x}{0}
 //| **Einschätzung: Qualitäten als Architekt**    | {x}{x}{0}{0}{0}
