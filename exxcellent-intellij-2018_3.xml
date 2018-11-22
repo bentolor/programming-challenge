@@ -1,6 +1,6 @@
 <profile version="1.0">
-  <description>[IDEA 2017.1.2] eXXcellent inspection profile – @bentolor | Last update: 2017-04-24</description>
-  <option name="myName" value="exxcellent-2018-bsc" />
+  <description>[IDEA 2018.3] eXXcellent inspection profile – @bentolor | Last update: 2018-11-22</description>
+  <option name="myName" value="exxcellent-intellij-2018.3" />
   <inspection_tool class="'var' could be a 'val'" enabled="false" level="WARNING" enabled_by_default="false" />
   <inspection_tool class="AbstractClassNamingConvention" enabled="true" level="ERROR" enabled_by_default="true">
     <option name="m_regex" value="Abstract[A-Za-z\d]*" />
@@ -34,7 +34,7 @@
     <option name="m_minLength" value="4" />
     <option name="m_maxLength" value="64" />
   </inspection_tool>
-  <inspection_tool class="Annotator" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+  <inspection_tool class="Annotator" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
   <inspection_tool class="AnonymousClassComplexity" enabled="false" level="WARNING" enabled_by_default="false">
     <option name="m_limit" value="5" />
   </inspection_tool>
@@ -155,6 +155,7 @@
   <inspection_tool class="CharacterComparison" enabled="true" level="INFO" enabled_by_default="false">
     <scope name="Production" level="INFO" enabled="true" />
   </inspection_tool>
+  <inspection_tool class="CharsetObjectCanBeUsed" enabled="true" level="INFORMATION" enabled_by_default="true" />
   <inspection_tool class="ClashingGetters" enabled="true" level="WARNING" enabled_by_default="true" />
   <inspection_tool class="ClassComplexity" enabled="true" level="WEAK WARNING" enabled_by_default="true">
     <option name="m_limit" value="80" />
@@ -295,9 +296,6 @@
   <inspection_tool class="DriverManagerGetConnection" enabled="true" level="WARNING" enabled_by_default="true" />
   <inspection_tool class="Duplicate function" enabled="false" level="WARNING" enabled_by_default="false" />
   <inspection_tool class="DuplicateBooleanBranch" enabled="true" level="ERROR" enabled_by_default="true" />
-  <inspection_tool class="DuplicateCondition" enabled="true" level="WARNING" enabled_by_default="true">
-    <option name="ignoreSideEffectConditions" value="true" />
-  </inspection_tool>
   <inspection_tool class="DuplicateFunction" enabled="false" level="WARNING" enabled_by_default="true" />
   <inspection_tool class="DuplicateMnemonic" enabled="false" level="WARNING" enabled_by_default="false" />
   <inspection_tool class="DuplicatePropertyInspection" enabled="true" level="WARNING" enabled_by_default="true">
@@ -309,7 +307,6 @@
   </inspection_tool>
   <inspection_tool class="Duplicates" enabled="true" level="WEAK WARNING" enabled_by_default="false">
     <scope name="Production" level="WEAK WARNING" enabled="true" />
-    <option name="myFilterOutGeneratedCode" value="true" />
   </inspection_tool>
   <inspection_tool class="DynamicRegexReplaceableByCompiledPattern" enabled="true" level="INFO" enabled_by_default="true" />
   <inspection_tool class="DynamicallyGeneratedCodeJS" enabled="true" level="WARNING" enabled_by_default="true" />
@@ -729,6 +726,7 @@
   <inspection_tool class="IfStatementWithTooManyBranchesJS" enabled="true" level="WARNING" enabled_by_default="true">
     <option name="m_limit" value="3" />
   </inspection_tool>
+  <inspection_tool class="IgnoreCoverEntry" enabled="true" level="UNUSED ENTRY" enabled_by_default="true" />
   <inspection_tool class="IgnoredJUnitTest" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
   <inspection_tool class="ImplicitNumericConversion" enabled="true" level="INFO" enabled_by_default="true">
     <option name="ignoreWideningConversions" value="true" />
@@ -767,7 +765,6 @@
   </inspection_tool>
   <inspection_tool class="InstanceofThis" enabled="true" level="WARNING" enabled_by_default="true" />
   <inspection_tool class="Integer division with remainder found." enabled="false" level="INFO" enabled_by_default="false" />
-  <inspection_tool class="IntegerDivisionInFloatingPointContext" enabled="true" level="WARNING" enabled_by_default="true" />
   <inspection_tool class="IntentionDescriptionNotFoundInspection" enabled="false" level="WARNING" enabled_by_default="false" />
   <inspection_tool class="InterfaceNamingConvention" enabled="true" level="WARNING" enabled_by_default="true">
     <option name="m_regex" value="[A-Z][A-Za-z\d]*" />
@@ -1143,8 +1140,8 @@
   <inspection_tool class="PackageWithTooFewClasses" enabled="true" level="WEAK WARNING" enabled_by_default="true">
     <option name="limit" value="3" />
   </inspection_tool>
-  <inspection_tool class="PackageWithTooManyClasses" enabled="true" level="INFO" enabled_by_default="true">
-    <option name="limit" value="50" />
+  <inspection_tool class="PackageWithTooManyClasses" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+    <option name="limit" value="70" />
   </inspection_tool>
   <inspection_tool class="PageflowModelInspection" enabled="false" level="ERROR" enabled_by_default="false" />
   <inspection_tool class="PagesFileModelInspection" enabled="false" level="ERROR" enabled_by_default="false" />
@@ -1348,7 +1345,6 @@
   <inspection_tool class="Simple variable usage" enabled="false" level="INFO" enabled_by_default="false" />
   <inspection_tool class="SimpleVarUsage" enabled="false" level="WEAK WARNING" enabled_by_default="true" />
   <inspection_tool class="SimplifiableAnnotation" enabled="true" level="INFO" enabled_by_default="true" />
-  <inspection_tool class="SimplifiableIfStatement" enabled="false" level="INFO" enabled_by_default="false" />
   <inspection_tool class="SimplifiableJUnitAssertion" enabled="true" level="INFO" enabled_by_default="true" />
   <inspection_tool class="SingleImport" enabled="false" level="WARNING" enabled_by_default="false" />
   <inspection_tool class="SizeReplaceableByIsEmpty" enabled="true" level="INFO" enabled_by_default="true" />
@@ -1601,6 +1597,7 @@
   <inspection_tool class="Wrap function body" enabled="false" level="INFO" enabled_by_default="false" />
   <inspection_tool class="WrapFunction" enabled="false" level="WEAK WARNING" enabled_by_default="true" />
   <inspection_tool class="WrapWord" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+  <inspection_tool class="WrapperTypeMayBePrimitive" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
   <inspection_tool class="WrongTopLevelPackage" enabled="false" level="ERROR" enabled_by_default="false" />
   <inspection_tool class="WrongTopLevelPackageInspection" enabled="false" level="ERROR" enabled_by_default="true" />
   <inspection_tool class="XHTMLIncompatabilitiesJS" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
